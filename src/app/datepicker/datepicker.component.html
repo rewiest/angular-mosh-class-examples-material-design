@@ -1,0 +1,11 @@
+
+<mat-form-field>
+  <input
+    (focus)="birthdate.open()"
+    [min]="minDate"
+    [max]="maxDate"
+    matInput [matDatepicker]="birthdate" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="birthdate"></mat-datepicker-toggle>
+  <mat-datepicker #birthdate touchUi="true"></mat-datepicker>
+</mat-form-field>
+  
