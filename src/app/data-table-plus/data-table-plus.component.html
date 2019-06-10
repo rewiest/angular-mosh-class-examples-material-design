@@ -12,6 +12,11 @@
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
       <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+      
+      <!--  To change row into a hyperlink
+      <td mat-cell *matCellDef="let row"><a href="/num/{{row.id}}">{{row.id}}</a></td>
+      -->
+
     </ng-container>
 
     <!-- Progress Column -->
